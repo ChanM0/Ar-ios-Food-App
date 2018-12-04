@@ -128,6 +128,7 @@
 				275772A821B6900D005DBDDF /* Views */,
 				275772A721B68FF8005DBDDF /* Controllers */,
 				272BC90F219E872800A7E77B /* AppDelegate.swift */,
+				274CB47A21B6B3F10042D7A9 /* RegisterLoginController.swift */,
 				272BC911219E872800A7E77B /* ViewController.swift */,
 				272BC913219E872800A7E77B /* Main.storyboard */,
 				272BC919219E872A00A7E77B /* Assets.xcassets */,
@@ -184,7 +185,6 @@
 		275772AE21B6908E005DBDDF /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				274CB47A21B6B3F10042D7A9 /* RegisterLoginController.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
