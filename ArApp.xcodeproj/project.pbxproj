@@ -19,6 +19,7 @@
 		275772AB21B69066005DBDDF /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275772AA21B69066005DBDDF /* SearchController.swift */; };
 		275772AD21B69084005DBDDF /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275772AC21B69084005DBDDF /* ProfileController.swift */; };
 		275772B221B69320005DBDDF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 275772B121B69320005DBDDF /* GoogleService-Info.plist */; };
+		27C1963421B711FB00E1F1AA /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C1963321B711FB00E1F1AA /* RegisterController.swift */; };
 		434364F4E5BA4D2192E48AC5 /* Pods_ArAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F7522FC30316C49BEA7035 /* Pods_ArAppUITests.framework */; };
 		5580B5B438690EB8B9680D2A /* Pods_ArAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76956E6C78894F47FECAC5DA /* Pods_ArAppTests.framework */; };
 		7E826344092031ADA9632D7D /* Pods_ArApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC89DB3DECD3F9A138A915A4 /* Pods_ArApp.framework */; };
@@ -60,6 +61,7 @@
 		275772AA21B69066005DBDDF /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		275772AC21B69084005DBDDF /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		275772B121B69320005DBDDF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		27C1963321B711FB00E1F1AA /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		4B2269D37431F057720A7503 /* Pods-ArApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArApp/Pods-ArApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5E8499224D0015FCDA2BE6BD /* Pods-ArAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArAppUITests/Pods-ArAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		76956E6C78894F47FECAC5DA /* Pods_ArAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,7 +163,7 @@
 		275772A721B68FF8005DBDDF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				275772AE21B6908E005DBDDF /* Authentication */,
+				27C1963221B711E500E1F1AA /* Authentication */,
 				275772AA21B69066005DBDDF /* SearchController.swift */,
 				275772AC21B69084005DBDDF /* ProfileController.swift */,
 			);
@@ -182,9 +184,10 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		275772AE21B6908E005DBDDF /* Authentication */ = {
+		27C1963221B711E500E1F1AA /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				27C1963321B711FB00E1F1AA /* RegisterController.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 				274CB47B21B6B3F10042D7A9 /* RegisterLoginController.swift in Sources */,
 				275772AD21B69084005DBDDF /* ProfileController.swift in Sources */,
 				272BC918219E872800A7E77B /* ArApp.xcdatamodeld in Sources */,
+				27C1963421B711FB00E1F1AA /* RegisterController.swift in Sources */,
 				272BC912219E872800A7E77B /* ViewController.swift in Sources */,
 				272BC910219E872800A7E77B /* AppDelegate.swift in Sources */,
 				275772AB21B69066005DBDDF /* SearchController.swift in Sources */,
