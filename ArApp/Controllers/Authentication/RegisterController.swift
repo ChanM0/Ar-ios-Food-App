@@ -53,5 +53,60 @@ class RegisterController: UIViewController {
             
         }
     }
+
+    
+    
+    
+    
+    
+    
+    
+    @IBAction func loginButtonAction(_ sender: UIButton) {
+        if let email = emailTextField.text, let password = passwordTextField.text {
+            Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+                // ...
+                if let u = user {
+                    print(u)
+                    self.performSegue(withIdentifier: "goToHomeScreen", sender: self)
+                    // Set user defaults
+                    // navigate to home screen
+                }
+                else{
+                    // handle errors
+                }
+            }
+        }
+    }
+    
+    
+    @IBAction func googleButtonAction(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func twitterButtonAction(_ sender: UIButton) {
+    }
+    
+    @IBAction func facebookActionTwitter(_ sender: UIButton) {
+    }
+    
+
+    //    @IBAction func loginButtonAction(_ sender: UIButton) {
+//        // navigate to new view
+//
+//    }
+//
+//
+//    @IBAction func googlePlusButtonAction(_ sender: UIButton) {
+//    }
+//
+//
+//    @IBAction func twitterButtonAction(_ sender: UIButton) {
+//    }
+//
+//
+//    @IBAction func faceBookButtonAction(_ sender: UIButton) {
+//    }
+    
+    
     
 }

@@ -21,15 +21,15 @@ class RegisterLoginController: UIViewController{
 //    @IBOutlet weak var passwordTextField: UITextField!
 //
 //
-    override func viewDidLoad(){
-
-        super.viewDidLoad()
-
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
+//    override func viewDidLoad(){
+//
+//        super.viewDidLoad()
+//
+//    }
+//
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//    }
 //
 //
 //    //    Ui buttons
@@ -57,7 +57,7 @@ class RegisterLoginController: UIViewController{
 //        }
 //
 //    }
-    
+//    
 //    @IBAction func loginButton(_ sender: UIButton) {
 //
 //        // navigate to new view
@@ -76,9 +76,9 @@ class RegisterLoginController: UIViewController{
 //            }
 //        }
 //    }
-    
-    
-    //  Other ways to login
+//    
+//    
+//      //Other ways to login
 //    @IBAction func twitterButton(_ sender: UIButton) {
 //        print("hello")
 //    }
@@ -91,6 +91,6 @@ class RegisterLoginController: UIViewController{
 //        print("hello")
 //    }
 //
-    
-    
+//    
+//    
 }

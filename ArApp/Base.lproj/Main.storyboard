@@ -154,8 +154,8 @@
                                             <action selector="createMyAccountButtonAction:" destination="Klr-5I-rqi" eventType="touchUpInside" id="z3f-SG-Brx"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or Log in with ? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ca-Tf-TfJ">
-                                        <rect key="frame" x="88.6666666666667" y="477.00000000000006" width="145.33333333333337" height="25.333333333333314"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or Login with ? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ca-Tf-TfJ">
+                                        <rect key="frame" x="90.999999999999986" y="477.00000000000006" width="140.66666666666663" height="25.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -172,6 +172,9 @@
                                                 <state key="normal" image="facebook">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="facebookActionTwitter:" destination="Klr-5I-rqi" eventType="touchUpInside" id="X1z-G0-gCr"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXt-uv-pfa" userLabel="twitterButton">
                                                 <rect key="frame" x="119" y="0.0" width="85" height="85"/>
@@ -182,6 +185,9 @@
                                                 <state key="normal" image="twitter">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="twitterButtonAction:" destination="Klr-5I-rqi" eventType="touchUpInside" id="D4f-2I-5fp"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRl-Zy-ci3" userLabel="googlePlusButton">
                                                 <rect key="frame" x="238" y="0.0" width="85" height="85"/>
@@ -192,6 +198,9 @@
                                                 <state key="normal" image="google">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="googleButtonAction:" destination="Klr-5I-rqi" eventType="touchUpInside" id="aPw-mb-LlH"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -207,6 +216,9 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginButtonAction:" destination="Klr-5I-rqi" eventType="touchUpInside" id="rij-Gg-vmi"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
