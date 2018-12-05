@@ -9,8 +9,9 @@
 import Foundation
 import UIKit
 import FirebaseAuth
+import GoogleSignIn
 
-class RegisterController: UIViewController {
+class RegisterController: UIViewController, GIDSignInUIDelegate, UITextFieldDelegate, UITextInputTraits {
     
     // Outlets
     
@@ -22,10 +23,34 @@ class RegisterController: UIViewController {
     
     override func viewDidLoad(){
         super.viewDidLoad()
+        
+        GIDSignIn.sharedInstance()?.uiDelegate = self
+        
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        
+        passwordTextField.isSecureTextEntry = true
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    
+    func hideKeyboard(){
+        
+        emailTextField.resignFirstResponder()
+        print("nope")
+        passwordTextField.resignFirstResponder()
+        
+    }
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("hello it aint happening")
+        hideKeyboard()
+        return true
     }
     
     //Button actions
@@ -55,12 +80,6 @@ class RegisterController: UIViewController {
     }
 
     
-    
-    
-    
-    
-    
-    
     @IBAction func loginButtonAction(_ sender: UIButton) {
         if let email = emailTextField.text, let password = passwordTextField.text {
             Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
@@ -78,10 +97,7 @@ class RegisterController: UIViewController {
         }
     }
     
-    
-    @IBAction func googleButtonAction(_ sender: UIButton) {
-        
-    }
+//    @IBOutlet weak var googleSignInButton: GIDSigninButton!
     
     @IBAction func twitterButtonAction(_ sender: UIButton) {
     }
@@ -90,23 +106,4 @@ class RegisterController: UIViewController {
     }
     
 
-    //    @IBAction func loginButtonAction(_ sender: UIButton) {
-//        // navigate to new view
-//
-//    }
-//
-//
-//    @IBAction func googlePlusButtonAction(_ sender: UIButton) {
-//    }
-//
-//
-//    @IBAction func twitterButtonAction(_ sender: UIButton) {
-//    }
-//
-//
-//    @IBAction func faceBookButtonAction(_ sender: UIButton) {
-//    }
-    
-    
-    
 }

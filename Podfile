@@ -8,6 +8,7 @@ target 'ArApp' do
   # Pods for ArApp
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
   pod 'GoogleSignIn'
 
   target 'ArAppTests' do
