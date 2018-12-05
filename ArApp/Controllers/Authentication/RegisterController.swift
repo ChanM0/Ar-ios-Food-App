@@ -23,14 +23,13 @@ class RegisterController: UIViewController, GIDSignInUIDelegate, UITextFieldDele
     
     override func viewDidLoad(){
         super.viewDidLoad()
+ 
         
         GIDSignIn.sharedInstance()?.uiDelegate = self
-        
         emailTextField.delegate = self
+        
         passwordTextField.delegate = self
-        
         passwordTextField.isSecureTextEntry = true
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -60,42 +59,51 @@ class RegisterController: UIViewController, GIDSignInUIDelegate, UITextFieldDele
         //  var formValues: [String: String] = [:]
         //  formValues["email"] = emailTextField.text
         //  formValues["password"] = passwordTextField.text
+        
         if let email = emailTextField.text, let password = passwordTextField.text {
-            Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
-                // ...
-                guard let user = authResult?.user else {
-                    //TODO: set up error messages
-                    return
-                    
-                }
-                print(user)
-                self.performSegue(withIdentifier: "goToHomeScreen", sender: self)
-                //TODO: set up login, set user as logged in with
-                // Set user defaults
-                // navigate to home screen
-                
+            createUserWithFireBase(email: email, password: password)
+        }
+    }
+    
+    func createUserWithFireBase(email : String , password : String){
+        
+        Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
+            guard let user = authResult?.user else {
+                //TODO: set up error messages
+                return
             }
+            print("*****")
+            print(user)
+            print("*****")
+            //TODO: set up login, set user as logged in with
+            // Set user defaults
+            // navigate to home screen
+            UserDefaults.standard.setLoggedInStatus(value: true)
             
+            self.performSegue(withIdentifier: "goToHomeScreen", sender: self)
         }
     }
 
     
     @IBAction func loginButtonAction(_ sender: UIButton) {
         if let email = emailTextField.text, let password = passwordTextField.text {
-            Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
-                // ...
-                if let u = user {
-                    print(u)
-                    self.performSegue(withIdentifier: "goToHomeScreen", sender: self)
-                    // Set user defaults
-                    // navigate to home screen
-                }
-                else{
-                    // handle errors
-                }
+            attemptToLogin(email: email, password: password)
+        }
+    }
+    
+    func attemptToLogin(email : String , password : String){
+        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+            if let u = user {
+                print(u)
+                UserDefaults.standard.setLoggedInStatus(value: true)
+                self.performSegue(withIdentifier: "goToHomeScreen", sender: self)
+            }
+            else{
+                // handle errors
             }
         }
     }
+    
     
 //    @IBOutlet weak var googleSignInButton: GIDSigninButton!
     
