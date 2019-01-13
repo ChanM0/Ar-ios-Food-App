@@ -262,7 +262,7 @@
                                             <constraint firstAttribute="width" constant="200" id="IVx-f3-abF" userLabel="width = 150"/>
                                             <constraint firstAttribute="height" constant="200" id="eKj-KZ-3za" userLabel="height = 150"/>
                                         </constraints>
-                                        <state key="normal" image="twitter">
+                                        <state key="normal" image="logo">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
@@ -425,11 +425,11 @@
     <resources>
         <image name="bookmark-icon" width="18.75" height="18.75"/>
         <image name="f1" width="1268" height="1902"/>
+        <image name="logo" width="1484" height="1476.3333740234375"/>
         <image name="menu-icon" width="18.75" height="18.75"/>
         <image name="profile-icon" width="18.75" height="18.75"/>
         <image name="scan-icon" width="18.75" height="18.75"/>
         <image name="search-icon" width="18.75" height="18.75"/>
-        <image name="twitter" width="250" height="250"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="2gr-z2-4pO"/>

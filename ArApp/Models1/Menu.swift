@@ -27,14 +27,14 @@ class Menu
     static func fetchMenus() -> [Menu]
     {
         return [
-            Menu(title: "Test AR", featuredImage: UIImage(named: "tulip.jpg")!, color: UIColor(red: 63/255.0, green: 71/255.0, blue: 80/255.0, alpha: 0.8)),
-            Menu(title: "Test AR", featuredImage: UIImage(named: "plantpot.jpg")!, color: UIColor(red: 240/255.0, green: 133/255.0, blue: 91/255.0, alpha: 0.8)),
-            Menu(title: "Test AR", featuredImage: UIImage(named: "plantpot.jpg")!, color: UIColor(red: 105/255.0, green: 80/255.0, blue: 227/255.0, alpha: 0.8)),
-            Menu(title: "Test AR", featuredImage: UIImage(named: "plantpot.jpg")!, color: UIColor(red: 102/255.0, green: 102/255.0, blue: 102/255.0, alpha: 0.8)),
+            Menu(title: "Test AR", featuredImage: UIImage(named: "wheelbarrow.jpg")!, color: UIColor(red: 63/255.0, green: 71/255.0, blue: 80/255.0, alpha: 0.8)),
+            Menu(title: "Test AR", featuredImage: UIImage(named: "wateringcan.jpg")!, color: UIColor(red: 240/255.0, green: 133/255.0, blue: 91/255.0, alpha: 0.8)),
+            Menu(title: "Test AR", featuredImage: UIImage(named: "teapot.jpg")!, color: UIColor(red: 105/255.0, green: 80/255.0, blue: 227/255.0, alpha: 0.8)),
+            Menu(title: "Test AR", featuredImage: UIImage(named: "gramophone.jpg")!, color: UIColor(red: 102/255.0, green: 102/255.0, blue: 102/255.0, alpha: 0.8)),
             
-            Menu(title: "Test AR", featuredImage: UIImage(named: "tulip.jpg")!, color: UIColor(red: 245/255.0, green: 62/255.0, blue: 40/255.0, alpha: 0.8)),
-            Menu(title: "Test AR", featuredImage: UIImage(named: "tulip.jpg")!, color: UIColor(red: 103/255.0, green: 217/255.0, blue: 87/255.0, alpha: 0.8)),
-            Menu(title: "Test AR", featuredImage: UIImage(named: "plantpot.jpg")!, color: UIColor(red: 63/255.0, green: 71/255.0, blue: 80/255.0, alpha: 0.8)),
+            Menu(title: "Test AR", featuredImage: UIImage(named: "cupandsaucer.jpg")!, color: UIColor(red: 245/255.0, green: 62/255.0, blue: 40/255.0, alpha: 0.8)),
+            Menu(title: "Test AR", featuredImage: UIImage(named: "redchair.jpg")!, color: UIColor(red: 103/255.0, green: 217/255.0, blue: 87/255.0, alpha: 0.8)),
+            Menu(title: "Test AR", featuredImage: UIImage(named: "tulip.jpg")!, color: UIColor(red: 63/255.0, green: 71/255.0, blue: 80/255.0, alpha: 0.8)),
             Menu(title: "Test AR", featuredImage: UIImage(named: "plantpot.jpg")!, color: UIColor(red: 240/255.0, green: 133/255.0, blue: 91/255.0, alpha: 0.8)),
         ]
     }

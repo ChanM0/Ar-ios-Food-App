@@ -100,7 +100,9 @@ extension MenusViewController : QLPreviewControllerDelegate, QLPreviewController
     }
     
     func previewController(_ controller: QLPreviewController, previewItemAt index: Int) -> QLPreviewItem {
+        print(models[thumbnailIndex])
         let url = Bundle.main.url(forResource: models[thumbnailIndex], withExtension: "usdz")!
+        print(url)
         return url as QLPreviewItem
     }
 }
